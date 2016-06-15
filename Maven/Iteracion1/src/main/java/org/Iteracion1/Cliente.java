@@ -6,4 +6,10 @@ public class Cliente {
 	public List<Producto> MostarListaProductos() {
 		return server.listarproductos();
 	}
+	public void mostrarproductos(){
+		List<Producto> p=server.listarproductos();
+		for(int i=0; i<p.size();i++){
+			p.get(i).getNombre();
+		}
+	}
 }
